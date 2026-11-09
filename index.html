@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naughts & Crosses</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Naughts & Crosses!</h1>
+    
+    <div id="victor"></div>
+
+    <div id="game"></div>
+
+    <div id="players-and-settings">
+        <div id="players">
+            <h3>Players:</h3>
+            <ul id="player-list">
+        </div>
+        </ul>
+        <div id="settings">
+            <div id="buttons">
+                <button id="btn-start-game">Start Game</button>
+                <button id="btn-add-player">Add Player</button>
+            </div>
+            <div id="new-player">
+                <div id="new-player-inputs">
+                    <div class="input-container">
+                        <label for="input-add-player-name">Player Name</label>
+                        <input type="text" id="input-add-player-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="input-add-player-marker">Player Marker</label>
+                        <input type="text" id="input-add-player-marker" maxlength="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

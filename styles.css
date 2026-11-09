@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto";
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: .25em;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 2em 2em 0 2em;
+}
+
+#players-and-settings {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: .5em;
+}
+
+#players {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    text-align: center;
+    gap: .5em
+}
+
+#player-list {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: calc();
+    text-align: left;
+
+    height: 100%;
+    min-width: 10vw;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+
+    list-style-position: inside;
+}
+
+#player-list li {
+    width: 100%;
+}
+
+#game {
+    display: flex;
+}
+
+#game-container {
+    padding: 1em;
+    flex-grow: 0;
+
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.square {
+    border: 1px solid gray;
+    height: clamp(50px, 5em, 16vw);
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.square-win {
+    background-color: gold;
+}
+
+#settings {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: .5em;
+}
+
+#buttons {
+    display: flex;
+    flex-flow: column;
+    gap: .5em;
+}
+
+#new-player {
+    display: flex;
+    flex-flow: column;
+    gap: .5em;
+    /* text-align: center; */
+    align-items: center;
+}
+
+#new-player-inputs {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    gap: .5em;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: .3em;
+}
+
+#input-add-player-name {
+    border-radius: .6em;
+    padding: .25em;
+    text-align: center;
+}
+
+#input-add-player-marker {
+    border-radius: .5rem;
+    padding: .25rem;
+    box-sizing: border-box;
+    height: 2em;
+    width: 2em;
+
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#input-add-player-name,
+#input-add-player-marker {
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid black;
+}
+
+button {
+    padding: 1em;
+    max-height: min-content;
+
+    border-radius: 1em;
+    border: none;
+    background-color: rgb(18, 141, 255);
+    box-shadow: 2px 2px rgb(49, 93, 135);
+
+    font-size: 1rem;
+    font-weight: bold;
+    color:white
+}
